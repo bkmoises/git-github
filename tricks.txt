@@ -1,0 +1,2 @@
+### IGNORAR ARQUIVOS
+Crie um arquivo ".gitignore" e liste os arquivos ou pastas que serão ignorados.

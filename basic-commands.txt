@@ -3,6 +3,10 @@ COMANDOS BÁSICOS DO GIT
 ## REPOSITÓRIO
 git init #Inicializar um repositório
 
+#Remoção
+git clean -F #Retirar arquivos não comitados do staged
+
+
 #Comparativos
 git diff #Lista as diferenças entre o repositório de trabalho e o ultimo commit
 git diff --cached #Lista as diferenças dos arquivos em staged.
@@ -13,7 +17,9 @@ git log --oneline #Exibe em uma unica linha
 
 git checkout SHA265 #Entra na versão anterior do código
 git checkout master #Retona para a versão atual
+git checkout arquivo.txt #Retorna o arquivo ao ultimo commit
 
+git reset --hard #Retorna todos os arquivos a ultima versão
 
 ## ACESSO
 git config --global credential.helper cache #Salva a ultima senha no histórico
