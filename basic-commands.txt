@@ -3,6 +3,10 @@ COMANDOS BÁSICOS DO GIT
 ## REPOSITÓRIO
 git init #Inicializar um repositório
 
+git pull #Baixa a versão mais atual do servidor.
+
+git push -u link master #Adiciona o repositório
+
 #Remoção
 git clean -F #Retirar arquivos não comitados do staged
 
@@ -20,6 +24,18 @@ git checkout master #Retona para a versão atual
 git checkout arquivo.txt #Retorna o arquivo ao ultimo commit
 
 git reset --hard #Retorna todos os arquivos a ultima versão
+
+##BRANCHS
+git branch #Lista as branchs do repositório
+git branch nome #Cria uma nova branch
+git checkout -b branchname #Cria e altera para a nova branch
+git branch -m branchname #Renomear uma branch
+git merge branchname #Uni duas branchs
+
+#Remover Branchs
+git branch -d branchname #Remove uma branch local
+git push --delete origin branchname #Remove uma branch do servidor
+
 
 ## ACESSO
 git config --global credential.helper cache #Salva a ultima senha no histórico
