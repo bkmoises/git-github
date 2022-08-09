@@ -1,11 +1,11 @@
 COMANDOS BÁSICOS DO GIT
 
 ## REPOSITÓRIO
+git remove -v #Mostra a URL do respositório
 git init #Inicializar um repositório
-
 git pull #Baixa a versão mais atual do servidor.
-
 git push -u link master #Adiciona o repositório
+git commit --amend #Adiciona novas alterações a um commit em staged
 
 #Remoção
 git clean -F #Retirar arquivos não comitados do staged
@@ -25,12 +25,27 @@ git checkout arquivo.txt #Retorna o arquivo ao ultimo commit
 
 git reset --hard #Retorna todos os arquivos a ultima versão
 
+##STASH
+git stash #Salva as alterações na memoriia sem commitar
+git stash list #Lista todas as mudanças guardadast
+git stash apply #Aplica as alterações do primeiro stash
+git stash pop #Aplica as alterações e remove o stash da lista
+git stash drop #Apaga um stash
+Todas os comandos aceitam indice da stash
+
+
+#TAG
+git tag -a tagname -m "mensage" #Inclui uma tag no commit
+git prush tagname origin #Envia a tag para o servidor
+git checkout tagname #Alterar para a tag selecionada
+
 ##BRANCHS
 git branch #Lista as branchs do repositório
 git branch nome #Cria uma nova branch
 git checkout -b branchname #Cria e altera para a nova branch
 git branch -m branchname #Renomear uma branch
 git merge branchname #Uni duas branchs
+git rebase #Realiza um merge de forma linear
 
 #Remover Branchs
 git branch -d branchname #Remove uma branch local
