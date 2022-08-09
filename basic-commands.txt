@@ -1,0 +1,12 @@
+COMANDOS BÁSICOS DO GIT
+
+## REPOSITÓRIO
+git init #Inicializar um repositório
+
+
+## ACESSO
+git config --global credential.helper cache #Salva a ultima senha no histórico
+
+
+## CONFIGURAÇÕES
+git config --list #Lista as configuraçoes atuais do git
