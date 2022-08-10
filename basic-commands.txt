@@ -6,10 +6,15 @@ git init #Inicializar um repositório
 git pull #Baixa a versão mais atual do servidor.
 git push -u link master #Adiciona o repositório
 git commit --amend #Adiciona novas alterações a um commit em staged
+git commit -m "novotexto" --amend #Altera o texto commitado
+
+#Add
+git add -i #Modo Interativo
+git add -p #Commitar partes do arquivo separados
 
 #Remoção
 git clean -F #Retirar arquivos não comitados do staged
-
+git reset --soft HEAD~2 #Retira os arquivos commitados sem descartar alterações (HEAD volta duas versões do HEAD)
 
 #Comparativos
 git diff #Lista as diferenças entre o repositório de trabalho e o ultimo commit
