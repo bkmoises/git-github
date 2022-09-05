@@ -7,6 +7,7 @@ git pull #Baixa a versão mais atual do servidor.
 git push -u link master #Adiciona o repositório
 git commit --amend #Adiciona novas alterações a um commit em staged
 git commit -m "novotexto" --amend #Altera o texto commitado
+git fetch - #Equivalente ao pull, mas traz as referências e tags
 
 #Add
 git add -i #Modo Interativo
@@ -46,6 +47,7 @@ git checkout tagname #Alterar para a tag selecionada
 
 ##BRANCHS
 git branch #Lista as branchs do repositório
+git branch -av #Lista todas as branchs
 git branch nome #Cria uma nova branch
 git checkout -b branchname #Cria e altera para a nova branch
 git branch -m branchname #Renomear uma branch
